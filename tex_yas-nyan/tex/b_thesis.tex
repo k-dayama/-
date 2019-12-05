@@ -1,0 +1,75 @@
+\documentclass[12pt,ascmac]{jreport}
+\usepackage{eclepsf}
+\usepackage{tascmac}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage[longnamesfirst]{natbib}
+\usepackage{atbegshi}
+\ifnum 42146=\euc"A4A2
+  \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\else
+  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\fi
+\usepackage[dvipdfmx]{graphics}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage[dvipdfmx, bookmarks=true, bookmarksnumbered=true,%
+bookmarkstype=toc,%
+pdftitle={Inferring parking block from vehicle position data},%
+pdfsubject={},%
+pdfauthor={Yasunobu Toyota},%
+pdfkeywords={ITS,location information,Probe Vehicle Systems,mobile network}%
+]{hyperref}
+
+\setlength{\headheight}{-20pt} % original is 2.45mm 7pt
+\setlength{\textheight}{660pt} % original is 225.75mm 645pt
+\setlength{\textwidth}{441pt}
+\oddsidemargin=0pt
+
+\renewcommand{\topfraction}{.99}
+\renewcommand{\textfraction}{.0}
+\renewcommand{\floatpagefraction}{.99}
+\renewcommand{\bibname}{参考文献}
+
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\input{title}
+\input{chapter/abst_jp}
+\clearpage
+\input{chapter/abst_en}
+\clearpage
+
+
+\tableofcontents
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+
+
+
+\pagenumbering{arabic}
+\input{chapter/introduction}    % 序論
+\input{chapter/related}         % 関連する技術や先行研究
+\input{chapter/proposal}        % 提案手法
+\input{chapter/implementation}  % 実装
+\input{chapter/evaluate}        % 評価
+\input{chapter/conclusion}      % 結論
+
+\input{chapter/apology}         % 謝辞
+
+\bibliographystyle{unsrt}
+\bibliography{b_thesis}
+
+\renewcommand{\thechapter}{\Alph{chapter}}
+\setcounter{chapter}{0}
+%\appendix
+
+
+\end{document}

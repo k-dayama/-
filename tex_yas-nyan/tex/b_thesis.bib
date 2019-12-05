@@ -1,0 +1,661 @@
+% saikawa手法
+@article{Saikawa,
+author="佐藤, 雅明 and 繁富利恵 and 上田, 憲道 and 党聡維 and 植原, 啓介 and 砂原, 秀樹 and 村井, 純",
+title="プローブ情報システムのためのプライバシを考慮した匿名認証方式の提案と評価",
+journal="情報処理学会論文誌",
+ISSN="1882-7764",
+publisher="情報処理学会",
+year="2009",
+month="jan",
+volume="50",
+number="1",
+pages="144-158",
+URL="https://ci.nii.ac.jp/naid/110007970312/",
+DOI="",
+}
+% GPSから道を検出する話in2009　プリウス
+@inproceedings{Cao:2009:GTR:1653771.1653776,
+ author = {Cao, Lili and Krumm, John},
+ title = {From GPS Traces to a Routable Road Map},
+ booktitle = {Proceedings of the 17th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems},
+ series = {GIS '09},
+ year = {2009},
+ isbn = {978-1-60558-649-6},
+ location = {Seattle, Washington},
+ pages = {3--12},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1653771.1653776},
+ doi = {10.1145/1653771.1653776},
+ acmid = {1653776},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {GPS, road map},
+} 
+
+% GPS情報でスイスの駐車場を検出する
+@INPROCEEDINGS{20.500.11850/49659,
+	series = {Working paper / Transport and Spatial Planning},
+	volume = {780},
+	author = {Axhausen, Kay W. and Montini, Lara and Horni, Andreas and Rieser-Schüssler, Nadine},
+	publisher = {Eidgenössische Technische Hochschule Zürich, IVT, Institute for Transport Planning and Systems},
+	year = {2012},
+	language = {en},
+	copyright = {In Copyright - Non-Commercial Use Permitted},
+	keywords = {PARKLEITSYSTEME (VERKEHR UND TRANSPORT); Post-processing; GLOBAL POSITIONING SYSTEM, GPS + INDOOR GPS (GEODÄSIE); Parking; ZURICH, CITY (CANTON OF ZURICH); PARKPLÄTZE + PARKIEREN + PARKGEBÜHREN (VERKEHR UND TRANSPORT); POSDAP; VERKEHRSMODELLE + VERKEHRSSIMULATION (VERKEHR UND TRANSPORT); FALLSTUDIEN (DOKUMENTENTYP); CASE STUDIES (DOCUMENT TYPE); GLOBAL POSITIONING SYSTEM, GPS + INDOOR GPS (GEODESY); TRANSPORT MODELS + TRAFFIC SIMULATION (TRANSPORTATION AND TRAFFIC); PARKING GUIDANCE SYSTEMS (TRANSPORTATION AND TRAFFIC); ZÜRICH, STADT (KANTON ZÜRICH); GPS; PARKING PLACES + PARKING + PARKING CHARGES (TRANSPORTATION AND TRAFFIC)},
+	size = {26 p.},
+	adress = {Zürich},
+	DOI = {10.3929/ethz-a-007319185},
+	title = {Searching for Parking in GPS Data},
+	Note = {13th International Conference on Travel Behaviour Research; Conference Location: Toronto, Ontario, Canada; Conference Date: July 15-20, 2012}
+}
+
+% GPSデータの痕跡から人の活動や重要な場所を抽出する方法について説明します。このシステムは、階層的に構造化された条件付きランダムフィールドを使用して、個人の活動および場所の一貫したモデルを生成する。
+% 人の活動で重要な部分を移動経路から推定するらしい。
+@article{Liao:2007:EPA:1229555.1229562,
+ author = {Liao, Lin and Fox, Dieter and Kautz, Henry},
+ title = {Extracting Places and Activities from GPS Traces Using Hierarchical Conditional Random Fields},
+ journal = {Int. J. Rob. Res.},
+ issue_date = {January   2007},
+ volume = {26},
+ number = {1},
+ month = jan,
+ year = {2007},
+ issn = {0278-3649},
+ pages = {119--134},
+ numpages = {16},
+ url = {http://dx.doi.org/10.1177/0278364907073775},
+ doi = {10.1177/0278364907073775},
+ acmid = {1229562},
+ publisher = {Sage Publications, Inc.},
+ address = {Thousand Oaks, CA, USA},
+ keywords = {activity recognition, belief propagation, conditional random fields, maximum pseudo-likelihood},
+} 
+
+
+% DBSCANアルゴリズムとかいう三次元的なクラスタリングGPSから道を生成する
+@Article{ijgi5080130,
+AUTHOR = {Qiu, Jia and Wang, Ruisheng},
+TITLE = {Road Map Inference: A Segmentation and Grouping Framework},
+JOURNAL = {ISPRS International Journal of Geo-Information},
+VOLUME = {5},
+YEAR = {2016},
+NUMBER = {8},
+URL = {http://www.mdpi.com/2220-9964/5/8/130},
+ISSN = {2220-9964},
+ABSTRACT = {We propose a new segmentation and grouping framework for road map inference from GPS traces. We first present a progressive Density-Based Spatial Clustering of Application with Noise (DBSCAN) algorithm with an orientation constraint to partition the whole point set of the traces into clusters that represent road segments. A new point cluster grouping algorithm, according to the topological relationship and spatial proximity of the point clusters to recover the road network, is then developed. After generating the point clusters, the robust Locally-Weighted Scatterplot Smooth (Lowess) method is used to extract their centerlines. We then propose to build the topological relationship of the centerlines by a Hidden Markov Model (HMM)-based map matching algorithm; and to assess whether the spatial proximity between point clusters by assuming the distances from the points to the centerline comply with a Gaussian distribution. Finally, the point clusters are grouped according to their topological relationship and spatial proximity to form strokes for recovering the road map. Experimental results show that our algorithm is robust to noise and varied sampling rates. The generated road maps show high geometric accuracy.},
+DOI = {10.3390/ijgi5080130}
+}
+
+
+
+% googeが似たようなことやってた悲しい
+@misc{google-mouyatteta,
+  title="{Inferring Road Maps from GPS Traces}",
+  author="James Biagioni",
+  note="\url{https://www.youtube.com/watch?v=byJzKjCta3c} 最終確認日2017年12月19日"
+
+}
+% 上の動画GPSから道路検出手法のサーベイ論文
+@INPROCEEDINGS{Biagioni,
+    author = {James Biagioni and Jakob Eriksson},
+    title = {Inferring road maps from GPS traces: Survey and comparative evaluation},
+    booktitle = {In Transportation Research Board, 91st Annual},
+    year = {2012}
+}
+
+% k-meansで地図の生成を行う著名な論文
+@incollection{Edelkamp,
+ author = {Edelkamp, Stefan and Schr\"{o}dl, Stefan},
+ chapter = {Route Planning and Map Inference with Global Positioning Traces},
+ title = {Computer Science in Perspective},
+ editor = {Klein, Rolf and Six, Hans-Werner and Wegner, Lutz},
+ year = {2003},
+ isbn = {3-540-00579-X},
+ pages = {128--151},
+ numpages = {24},
+ url = {http://dl.acm.org/citation.cfm?id=865449.865460},
+ acmid = {865460},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {New York, NY, USA},
+}
+% Trace-Merging法の論文
+@inproceedings{Cao,
+author = {Cao, Lili and Krumm, John},
+title = {From GPS Traces to a Routable Road Map},
+booktitle = {},
+year = {2009},
+month = {November},
+abstract = {This paper presents a method for automatically converting raw GPS traces from everyday vehicles into a routable road network. The method begins by smoothing raw GPS traces using a novel aggregation technique. This technique pulls together traces that belong on the same road in response to simulated potential energy wells created around each trace. After the traces are moved in response to the potential fields, they tend to coalesce into smooth paths. To help adjust the parameters of the constituent potential fields, we present a theoretical analysis of the behavior of our algorithm on a few different road configurations. With the resulting smooth traces, we apply a custom clustering algorithm to create a graph of nodes and edges representing the road network. We show how this network can be used to plan reasonable driving routes, much like consumer-oriented mapping Web sites. We demonstrate our algorithms using real GPS data collected on public roads, and we evaluate the effectiveness of our approach by comparing the route planning results suggested by our generated graph to a commercial route planner.},
+publisher = {},
+url = {https://www.microsoft.com/en-us/research/publication/gps-traces-routable-road-map/},
+address = {},
+pages = {3-12},
+journal = {},
+volume = {},
+chapter = {},
+isbn = {},
+}
+
+% カーネル密度推定について
+@article{Ueki,
+  title={カーネル密度推定におけるカーネル関数の比較},
+  author={植木 優夫 and 笛田 薫},
+  journal={日本計算機統計学会大会論文集},
+  volume={17},
+  number={ },
+  pages={147-150},
+  year={2003},
+  doi={10.20551/jscstaikai.17.0_147}
+}
+
+% KDE法を
+@ARTICLE{Davies, 
+author={J. J. Davies and A. R. Beresford and A. Hopper}, 
+journal={IEEE Pervasive Computing}, 
+title={Scalable, Distributed, Real-Time Map Generation}, 
+year={2006}, 
+volume={5}, 
+number={4}, 
+pages={47-54}, 
+keywords={road vehicles;traffic information systems;computational resource;digital road maps;road network;road vehicle;wide-scale mobile sensing;Databases;Global Positioning System;Histograms;Intelligent transportation systems;Microprocessors;Mobile computing;Navigation;North America;Probes;Road vehicles;algorithm/protocol design and analysis;architectures;distributed applications;distributed systems;mobile computing}, 
+doi={10.1109/MPRV.2006.83}, 
+ISSN={1536-1268}, 
+month={Oct},}
+
+
+%みんなだいすきITS-connect
+@misc{its-connect,
+  title = "トヨタ自動車WEBサイト ITS Connect ",
+  author = "トヨタ自動車株式会社",
+  note = "\url{http://toyota.jp/technology/safety/itsconnect/} 最終確認日2017年12月19日"
+}
+% RTK-GPSについて
+@misc{RTK,
+  title = "GNSSを使用した測量のいろいろ ",
+  author = "国土地理院",
+  note = "\url{http://terras.gsi.go.jp/geo_info/GNSS_iroiro.html} 最終確認日2017年12月19日"
+}
+% みちびきについて
+@misc{michibiki,
+  title="衛星測位サービス｜みちびきについて｜みちびき（準天頂衛星システム：QZSS）公式サイト",
+  author="内閣府",
+  note="\url{http://qzss.go.jp/overview/services/sv04_pnt.html} 最終確認日2017年12月19日"
+}
+%DSRC通信について
+@misc{DSRC,
+ author="{総務省 東海総合通信局}",
+ title="DSRC（狭域通信）システム",
+ note="\url{http://www.soumu.go.jp/soutsu/tokai/musen/its/dsrc.html} 最終確認日2018年1月17日"
+}
+% 802.11pの本文
+@INPROCEEDINGS{802.11p-official, 
+author={D. Jiang and L. Delgrossi}, 
+booktitle={VTC Spring 2008 - IEEE Vehicular Technology Conference}, 
+title={IEEE 802.11p: Towards an International Standard for Wireless Access in Vehicular Environments}, 
+year={2008}, 
+volume={}, 
+number={}, 
+pages={2036-2040}, 
+keywords={IEEE standards;automobiles;mobile radio;telecommunication standards;wireless LAN;IEEE 802.11 standard;IEEE 802.11 working group;IEEE 802.11p;international standard;moving vehicles;vehicular environments;vehicular safety communications;wireless access;wireless communication systems;Broadcasting;Communication standards;FCC;North America;Road safety;Road vehicles;Standardization;Standards development;Vehicle driving;Vehicle safety}, 
+doi={10.1109/VETECS.2008.458}, 
+ISSN={1550-2252}, 
+month={May},}
+% 日本語の補足
+@misc{802.11p-sup,
+  title="IEEE 802.11p",
+  author="株式会社デプロ",
+  note="\url{http://www.de-pro.co.jp/2016/11/22/8959/} 最終確認日2017年12月19日"
+}
+% ETCの規格
+@misc{ARIB,
+  title="ARIB STD-T75 1.5版",
+  author="社団法人 電波産業会",
+  year="2008",
+  month="Sep",
+  note="\url{https://www.arib.or.jp/kikaku/kikaku_tushin/desc/std-t75.html}"
+}
+% 観光地の駐車場ってシーズンの偏りとか超混雑が起こりやすいって話。駐車場需要配分シミュレーションシステムをつくった　って話
+@article{199559,
+  title={観光地における駐車需要配分シミュレーションシステムの開発},
+  author={本橋 稔 and 永井 護},
+  journal={土木情報システム論文集},
+  volume={4},
+  number={ },
+  pages={59-66},
+  year={1995},
+  doi={10.11532/journalac1992.4.59}
+}
+@misc{camera,
+  title = "株式会社ニチゾウテック 駐車場誘導管制設備",
+  note = "\url{http://www.nichizotech.co.jp/products/04parking/index.html} 最終確認日2017年12月19日"
+}
+
+%GPSの精度についてちょろっと書いてある
+@misc{gps-gov,
+  title="GPS Accuracy",
+  author="GPS.gov",
+  note="\url{https://www.gps.gov/systems/gps/performance/accuracy/} 最終確認日2017年12月19日"
+
+}
+%GPSの概要
+
+@Article{Yasuda,
+  author={安田 明生},
+  title={GPSの概要},
+  year={2003},
+  publisher={応用物理学会分科会日本光学会},
+  volume={32},
+  number={11},
+  pages={646-653},
+  issn={03896625},
+  url={https://ci.nii.ac.jp/naid/10012561368}
+}
+
+
+% 国土交通省のpdf
+@misc{googlemap,
+  title = "GoogleMaps",
+  note = "\url{https://www.google.co.jp/maps} 最終確認日2017年12月19日"
+}
+
+@misc{times,
+  title = "タイムズ駐車場検索",
+  note = "\url{https://times-info.net/} 最終確認日2017年12月19日"
+}
+% ITS事業委員会
+@misc{iso-tc-204,
+  title="ISO/TC 204 Intelligent transport systems",
+  note="\url{https://www.iso.org/committee/54706.html} 最終確認日2017年12月19日"
+}
+% ITS事業委員会が生み出した無線の統合規格
+@ARTICLE{CALM, 
+author={G. Karagiannis and O. Altintas and E. Ekici and G. Heijenk and B. Jarupan and K. Lin and T. Weil}, 
+journal={IEEE Communications Surveys Tutorials}, 
+title={Vehicular Networking: A Survey and Tutorial on Requirements, Architectures, Challenges, Standards and Solutions}, 
+year={2011}, 
+volume={13}, 
+number={4}, 
+pages={584-616}, 
+keywords={computer networks;mobile radio;radio networks;road safety;road traffic;telecommunication standards;ITS programs;infotainment;traffic efficiency;traffic safety;vehicular networking;Driver circuits;Intelligent vehicle systems;Road safety;Standardization;System performance;ARIB;ASV;COMeSafety;CVIS;IEEE 1609;IEEE 802.11p;ISO CALM;ITS-Safety 2010;IntelliDrive(sm);SAE;SAFESPOT;SEVECOM;SMARTWAY;V2I;V2V;VII;VSC;Vehicular networking;WAVE;eSafety}, 
+doi={10.1109/SURV.2011.061411.00019}, 
+ISSN={1553-877X}, 
+month={Fourth},}
+@misc{3G,
+  title="LICENSING POLICY FOR 3RD GENERATION MOBILE",
+  note="\url{https://www.itu.int/osg/spu/ni/3G/} 最終確認日2017年12月19日",
+  author="ITU"
+}
+
+%5Gのリクワイアメント
+@ARTICLE{5G, 
+author={E. Dahlman and G. Mildh and S. Parkvall and J. Peisa and J. Sachs and Y. Selén and J. Sköld}, 
+journal={IEEE Communications Magazine}, 
+title={5G wireless access: requirements and realization}, 
+year={2014}, 
+volume={52}, 
+number={12}, 
+pages={42-47}, 
+keywords={5G mobile communication;mobile communication;5G wireless access;ITU-R;mobile communication technology;Communication standards;Mobile communication;Next generation networking;OFDM;Standards;Telecommunication standards;Wireless communication;Wireless sensor networks}, 
+doi={10.1109/MCOM.2014.6979985}, 
+ISSN={0163-6804}, 
+month={December},}
+
+@misc{5G-soumu,
+  author="杉野 勲",
+  affiliation="総務省 移動通信課",
+  title="2020年に向けた５G及びITS・自動走行に関する総務省の取組等について",
+  note="\url{https://www.kiai.gr.jp/jigyou/h29/PDF/0608p1.pdf} 最終確認日2017年12月19日",
+  year="2017",
+  month="Jun"
+}
+%ITUの2G-3G-4G的な話
+@misc{itu,
+  title="ITU-D Technologies Infrastructures and Applications: Mobile Communications",
+  note="\url{https://www.itu.int/ITU-D/tech/MobileCommunications/IMT_INTRODUCING/IMT_2G3G4G.html} 最終確認日2017年12月19日",
+  author="ITU"
+}
+% 国土交通省のpdf
+@misc{Kokudo,
+  author = "国土交通省",
+  title = "観光地における渋滞対策",
+  year = "2016",
+  month = "oct",
+  booktitle = "第５６回基本政策部会",
+  note="\url{http://www.mlit.go.jp/common/001150187.pdf} 最終確認日2017年12月19日"
+}
+% 駐車場の満空を自動車だけでセンシング・管理する話。ネットワークモデルが事前に必要の根拠
+@inproceedings{Yamashita,
+   author	 = "山下翔平 and 高見一正",
+   title	 = "大規模駐車場での区画管理クラスタ間の車車間オーバレイトポロジー構成法と空塞情報収集法",
+   booktitle	 = "第76回全国大会講演論文集",
+   year 	 = "2014",
+   volume	 = "2014",
+   number	 = "1",
+   pages	 = "127--128",
+   month	 = "mar"
+}
+% Wi-Fiとかを用いて駐車ナビをする.ネットワークモデルが事前に必要の根拠
+@inproceedings{Sun-Kenmochi,
+   author	 = "孫為華 and 剣持真弘 and 柴田直樹 and 安本慶一 and 伊藤実",
+   title	 = "待ち時間を短縮する駐車ナビゲーション",
+   booktitle	 = "マルチメディア通信と分散処理ワークショップ論文集",
+   year 	 = "2013",
+   volume	 = "2013",
+   number	 = "6",
+   pages	 = "9--19",
+   month	 = "nov"
+}
+
+% VANETについてのサーベイ論文　こういうの神
+@article{Elias,
+    title =	"Advances in Vehicular Ad-hoc Networks (VANETs): challenges and road-map for future development",
+    publisher = "Springer",
+    author =	"Eze, Elias C. and Zhang, Sijing and Liu, Enjie and Eze, Joy C.",
+    journal =	"International Journal of Automation and Computing",
+    url =	"http://hdl.handle.net/10547/622070",
+    issn=	"1476-8186",
+    doi=	"10.1007/s11633-015-0913-y",
+    note = "Recent advances in wireless communication technologies and auto-mobile industry have triggered a significant research interest in the field of vehicular ad-hoc networks (VANETs) over the past few years. A vehicular network consists of vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) communications supported by wireless access technologies such as IEEE 802.11p. This innovation in wireless communication has been envisaged to improve road safety and motor traffic efficiency in near future through the development of intelligent transportation system (ITS). Hence, governments, auto-mobile industries and academia are heavily partnering through several ongoing research projects to establish standards for VANETs. The typical set of VANET application areas, such as vehicle collision warning and traffic information dissemination have made VANET an interesting field of mobile wireless communication. This paper provides an overview on current research state, challenges, potentials of VANETs as well as the ways forward to achieving the long awaited ITS.",
+}
+
+
+% 料金とか色々条件があった上でどんな駐車場が選択されるかのシミュレーション
+% ネットワークモデルが書いてある
+@article{Asakura,
+  title={ネットワーク上での駐車場選択シミュレーションモデル},
+  author={朝倉 康夫 and 柏谷 増男 and 坂本 志郎},
+  journal={土木計画学研究・論文集},
+  volume={12},
+  number={ },
+  pages={621-631},
+  year={1995},
+  doi={10.2208/journalip.12.621}
+}
+
+% 駐車場側と駐車していいかを交渉して予約するシステム
+@article{Tokuda,
+author="徳田, 渉 and Miguel, Miguel, A., Lopez-Carmona and 金森, 亮 and 伊藤, 孝行",
+title="車両に対する自動交渉による駐車場割当手法の提案",
+journal="研究報告知能システム（ICS）",
+ISSN="09196072",
+publisher="一般社団法人情報処理学会",
+year="2015",
+month="mar",
+volume="2015",
+number="13",
+pages="1-6",
+URL="https://ci.nii.ac.jp/naid/110009882498/",
+DOI="",
+}
+
+
+% ステレオカメラで空き駐車スペース検出する話
+@article{Yamazaki,
+  title={ステレオカメラを用いる空き駐車スペース検出法},
+  author={山崎 瑠香 and 佐々木 拓馬 and 花泉 弘},
+  journal={自動制御連合講演会講演論文集},
+  volume={59},
+  number={ },
+  pages={14-17},
+  year={2016},
+  doi={10.11511/jacc.59.0_14}
+}
+
+% VANETで来た情報の関連性を機械学習で学ぶ
+@inproceedings{Szczurek:2010:LRP:1860058.1860074,
+ author = {Szczurek, Piotr and Xu, Bo and Wolfson, Ouri and Lin, Jie and Rishe, Naphtali},
+ title = {Learning the Relevance of Parking Information in VANETs},
+ booktitle = {Proceedings of the Seventh ACM International Workshop on VehiculAr InterNETworking},
+ series = {VANET '10},
+ year = {2010},
+ isbn = {978-1-4503-0145-9},
+ location = {Chicago, Illinois, USA},
+ pages = {81--82},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/1860058.1860074},
+ doi = {10.1145/1860058.1860074},
+ acmid = {1860074},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {data dissemination, machine learning, parking},
+} 
+
+
+% 駐車場の満空をVANETで共有した際に、ついた時も空いてるかどうかの指数をモデル化。マルコフ連鎖らしい。
+@misc{Caliskan,
+	affiliation = {},
+	author = {Caliskan, Murat and Barthels, Andreas and Scheuermann, Bjorn and Mauve, Martin},
+	doi = {10.1109/VETECS.2007.69},
+	language = {Undetermined},
+	title = {Predicting Parking Lot Occupancy in Vehicular Ad Hoc Networks},
+}
+
+
+% 駐車場のVANETのAntennaの配置の話
+@inproceedings{Panayappan:2007:VAP:1287748.1287763,
+ author = {Panayappan, Ramu and Trivedi, Jayini Mukul and Studer, Ahren and Perrig, Adrian},
+ title = {VANET-based Approach for Parking Space Availability},
+ booktitle = {Proceedings of the Fourth ACM International Workshop on Vehicular Ad Hoc Networks},
+ series = {VANET '07},
+ year = {2007},
+ isbn = {978-1-59593-739-1},
+ location = {Montreal, Quebec, Canada},
+ pages = {75--76},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/1287748.1287763},
+ doi = {10.1145/1287748.1287763},
+ acmid = {1287763},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {VANET, occupancy matrix, occupancy probability, parking},
+} 
+
+% SPARK 引用数半端ない
+%VANETでSPARK方式は、システム設定、リアルタイムパーキングナビゲーション、インテリジェントな盗難防止、フレンドリーな駐車情報の普及をするらしい
+% 評価手法は真似をした方がいい。必見。シミュレーターのパラメーターなど
+@INPROCEEDINGS{Spark, 
+author={R. Lu and X. Lin and H. Zhu and X. Shen}, 
+booktitle={IEEE INFOCOM 2009}, 
+title={SPARK: A New VANET-Based Smart Parking Scheme for Large Parking Lots}, 
+year={2009}, 
+volume={}, 
+number={}, 
+pages={1413-1421}, 
+keywords={traffic control;traffic engineering computing;SPARK;Smart Parking;VANET;intelligent anti-theft protection;parking information dissemination;vehicular communications;Ad hoc networks;Communications Society;Communications technology;Information technology;Navigation;Performance analysis;Protection;Space technology;Sparks;Vehicles}, 
+doi={10.1109/INFCOM.2009.5062057}, 
+ISSN={0743-166X}, 
+month={April},}
+
+
+% 車両からのセンシングでリーガル・イリーガル路駐マップを作成する。クラウドセンシング。
+% >データマイニングアルゴリズムを用いてGPSトレースから道路地図を推論することに成功したいくつかのプロジェクト[ 7 ]、[ 8]しかし、それらのどれも駐車地図を推測するという問題に取り組んでいない。
+% マジ?
+@INPROCEEDINGS{Crowdsensing, 
+author={V. Coric and M. Gruteser}, 
+booktitle={2013 IEEE International Conference on Distributed Computing in Sensor Systems}, 
+title={Crowdsensing Maps of On-street Parking Spaces}, 
+year={2013}, 
+volume={}, 
+number={}, 
+pages={115-122}, 
+keywords={road traffic;sensor placement;traffic control;Highland Park;NJ;NY areas;crowd sensing maps;crowd sourced data;downtown Brooklyn;legal-illegal parking spaces;on-street parking maps;on-street parking spaces;traffic congestion;vehicles preinstalled parking sensors;Acoustics;Global Positioning System;Law;Space vehicles;Time series analysis;crowdsensing;parking maps}, 
+doi={10.1109/DCOSS.2013.15}, 
+ISSN={2325-2936}, 
+month={May},}
+
+% スマートな駐車場予約システムの話
+@INPROCEEDINGS{SmartParkingSystem, 
+author={Hongwei Wang and Wenbo He}, 
+booktitle={2011 IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)}, 
+title={A Reservation-based Smart Parking System}, 
+year={2011}, 
+volume={}, 
+number={}, 
+pages={690-695}, 
+keywords={automated highways;mobile computing;cyber-physical system;reservation-based smart parking system;sensor networks;traffic congestion;Availability;Databases;Driver circuits;IEEE 802.11 Standards;Monitoring;Sensors;Synchronization;modeling;simulation;smart parking}, 
+doi={10.1109/INFCOMW.2011.5928901}, 
+ISSN={}, 
+month={April},}
+
+% 助手席側にセンサーつけて路上駐車してるかどうかをセンシングして、GPSの情報と紐付けて駐車場の満空を明らかにする話
+@inproceedings{Parknet,
+ author = {Mathur, Suhas and Jin, Tong and Kasturirangan, Nikhil and Chandrasekaran, Janani and Xue, Wenzhi and Gruteser, Marco and Trappe, Wade},
+ title = {ParkNet: Drive-by Sensing of Road-side Parking Statistics},
+ booktitle = {Proceedings of the 8th International Conference on Mobile Systems, Applications, and Services},
+ series = {MobiSys '10},
+ year = {2010},
+ isbn = {978-1-60558-985-5},
+ location = {San Francisco, California, USA},
+ pages = {123--136},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1814433.1814448},
+ doi = {10.1145/1814433.1814448},
+ acmid = {1814448},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {location accuracy, mobile sensing, mobility, sensors networks, smart infrastructure},
+} 
+% VANETによって駐車場の満空を提供するんだけど、競合しないようによしなにナビゲーションするシステム
+@inproceedings{Delot:2009:CRP:1710035.1710065,
+ author = {Delot, Thierry and Cenerario, Nicolas and Ilarri, Sergio and Lecomte, Sylvain},
+ title = {A Cooperative Reservation Protocol for Parking Spaces in Vehicular Ad Hoc Networks},
+ booktitle = {Proceedings of the 6th International Conference on Mobile Technology, Application \&\#38; Systems},
+ series = {Mobility '09},
+ year = {2009},
+ isbn = {978-1-60558-536-9},
+ location = {Nice, France},
+ pages = {30:1--30:8},
+ articleno = {30},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1710035.1710065},
+ doi = {10.1145/1710035.1710065},
+ acmid = {1710065},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {data sharing, parking space allocation, vehicular networks},
+} 
+
+% K-Meansの論文
+@article{Forgy,
+author="FORGY, E. W.",
+title="Cluster analysis of multivariate data : efficiency versus interpretability of classifications",
+journal="Biometrics",
+ISSN="",
+publisher="",
+year="1965",
+month="",
+volume="21",
+number="",
+pages="768-769",
+URL="https://ci.nii.ac.jp/naid/10009668881/",
+DOI="",
+}
+
+% X-meansの論文
+@inproceedings{Pelleg,
+ author = {Pelleg, Dan and Moore, Andrew W.},
+ title = {X-means: Extending K-means with Efficient Estimation of the Number of Clusters},
+ booktitle = {Proceedings of the Seventeenth International Conference on Machine Learning},
+ series = {ICML '00},
+ year = {2000},
+ isbn = {1-55860-707-2},
+ pages = {727--734},
+ numpages = {8},
+ url = {http://dl.acm.org/citation.cfm?id=645529.657808},
+ acmid = {657808},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+}
+% X-means改良版
+@article{Ishioka,
+  title={クラスター数を自動決定するk-meansアルゴリズムの拡張について},
+  author={石岡 恒憲},
+  journal={応用統計学},
+  volume={29},
+  number={3},
+  pages={141-149},
+  year={2000},
+  doi={10.5023/jappstat.29.141}
+}
+% yasaichi氏による石岡手法の実装
+@misc{Yasaichi-git,
+  title="{Implementation of X-means clustering in Python}",
+  note="\url{https://gist.github.com/yasaichi/254a060eff56a3b3b858} 最終確認日 2018年1月16日",
+  author="Yuichi Goto(@yasaichi) \url{https://github.com/yasichi/}"
+}
+@misc{Yasaichi,
+  title="{Pythonでx-means法を実装した}",
+  note="\url{http://web-salad.hateblo.jp/entry/2014/07/19/200347}",
+  author="Yuichi Goto"
+}
+
+% 共分散の求め方について
+@misc{Toukei-web,
+  title="{統計用語集 共分散}",
+  note="\url{https://bellcurve.jp/statistics/glossary/914.html} 最終確認日 2018年1月16日",
+  author="{株式会社 社会情報サービス}"
+}
+@misc{Kyoubunsan-vs-huhenkyoubunsan,
+  title="{不偏標本分散の意味とn-1で割ることの証明}",
+  note="\url{https://mathtrain.jp/huhenbunsan} 最終確認日 2018年1月17日",
+  author="高校数学の美しい物語"
+}
+
+
+% Ashimuraさんの資料
+@misc{Ashimura,
+  title="Web をクルマにつなぐW3C の国際標準化- W3C Vehicle API 標準化動向及び仕様草案の概要",
+  author="芦村 和幸",
+  year="2016"
+}
+
+% DICOMOの論文
+@conference	{DICOMO,
+  author="豊田安信 and 佐藤雅明 and 村井純",
+  title="{W3C Vehicle APIを用いた複数のアプリケーションからの車両情報取得技術とプロトコル}",
+  booktitle="マルチメディア，分散協調とモバイルシンポジウム2017論文集",
+  year="2017",
+  volume="2017",
+  month="Jul"
+}
+% ユークリッド距離について記述しているウェブページ。クラスタの解析手法について書いてあるらしい
+@misc{cluster-analysis,
+  note="\url{http://www.statsoft.com/Textbook/Cluster-Analysis} 最終確認日 2018年1月15日",
+  author="{TIBCO Software Inc}",
+  title="{How To Group Objects Into Similar Categories, Cluster Analysis}"
+
+}
+%ダイクストラ法
+@article{Dijkstra,
+ author = {Dijkstra, E. W.},
+ title = {A Note on Two Problems in Connexion with Graphs},
+ journal = {Numer. Math.},
+ issue_date = {December  1959},
+ volume = {1},
+ number = {1},
+ month = dec,
+ year = {1959},
+ issn = {0029-599X},
+ pages = {269--271},
+ numpages = {3},
+ url = {http://dx.doi.org/10.1007/BF01386390},
+ doi = {10.1007/BF01386390},
+ acmid = {2722945},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {Secaucus, NJ, USA},
+}
+
+% Biagioniより精度が高いと言われる方法を2016年に提案したやつ。やべえ。
+@Article{ijgi5080130,
+AUTHOR = {Qiu, Jia and Wang, Ruisheng},
+TITLE = {Road Map Inference: A Segmentation and Grouping Framework},
+JOURNAL = {ISPRS International Journal of Geo-Information},
+VOLUME = {5},
+YEAR = {2016},
+NUMBER = {8},
+ARTICLE NUMBER = {130},
+URL = {http://www.mdpi.com/2220-9964/5/8/130},
+ISSN = {2220-9964},
+ABSTRACT = {We propose a new segmentation and grouping framework for road map inference from GPS traces. We first present a progressive Density-Based Spatial Clustering of Application with Noise (DBSCAN) algorithm with an orientation constraint to partition the whole point set of the traces into clusters that represent road segments. A new point cluster grouping algorithm, according to the topological relationship and spatial proximity of the point clusters to recover the road network, is then developed. After generating the point clusters, the robust Locally-Weighted Scatterplot Smooth (Lowess) method is used to extract their centerlines. We then propose to build the topological relationship of the centerlines by a Hidden Markov Model (HMM)-based map matching algorithm; and to assess whether the spatial proximity between point clusters by assuming the distances from the points to the centerline comply with a Gaussian distribution. Finally, the point clusters are grouped according to their topological relationship and spatial proximity to form strokes for recovering the road map. Experimental results show that our algorithm is robust to noise and varied sampling rates. The generated road maps show high geometric accuracy.},
+DOI = {10.3390/ijgi5080130}
+}

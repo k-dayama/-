@@ -17,11 +17,13 @@ class rosen():
     ekiStd=[0,0]
     invR=[]
     x_return = []
-    ekiData2=np.array
+    ekiData2=np.array([])
     div = 50
     curve_c = np.zeros((2,div+1))
     def __init__(self, ekiurl):
         self.url  = ekiurl
+        self.ekiData= []
+        self.curve_c = np.zeros((2,self.div+1))
         self.getData()
         self.avg()
         self.maha()
@@ -69,7 +71,7 @@ class rosen():
         self.x_return.append(d2)
     def daen(self):
         low = np.corrcoef(self.ekiData2[:,0],self.ekiData2[:,1])[0,1]
-        p = 0.99
+        p = 0.95
         for i in range(self.div+1):
             r = (-2*(1-low**2)*np.log(1-p)/(1-2*low*np.sin(i*2*np.pi/self.div)*np.cos(i*2*np.pi/self.div)))**0.5
             self.curve_c[0,i] = self.ekiAvg[0] + self.ekiStd[0]*r*np.cos(i*2*np.pi/self.div)
@@ -88,7 +90,7 @@ plt.scatter(dento.ekiData2[:,0],dento.ekiData2[:,1], c="m", s=50)
 plt.xlabel("long")
 plt.ylabel("lat")
 
-plt.plot(odakyu.curve_c[0],odakyu.curve_c[1],c="c")
+plt.plot(odakyu.curve_c[0],odakyu.curve_c[1],c="green")
 plt.plot(dento.curve_c[0],dento.curve_c[1],c="m")
 
 plt.show()

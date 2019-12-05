@@ -11,6 +11,7 @@ import json
 
 class rosen():
     ekiData= []
+    ekiDict=[]
     def __init__(self, ekiurl):
         self.url  = ekiurl
         self.getData()
@@ -19,14 +20,18 @@ class rosen():
     def getData(self):
         with open(self.url) as f:
             l = json.load(f)
+            self.ekiDict = l
             for i in l:
                 addlist = []
                 addlist.append(i.get('stlat')) 
                 addlist.append(i.get('stlong'))
+                self.ekiData.append(addlist)
+                addlist = []
                 addlist.append(i.get('endlat')) 
                 addlist.append(i.get('endlong')) 
                 self.ekiData.append(addlist)
-        
+
+
 
     def ave(self):
         pass

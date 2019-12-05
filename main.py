@@ -7,5 +7,30 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.font_manager
 import pylab
+import json
+
+class rosen():
+    ekiData= []
+    def __init__(self, ekiurl):
+        self.url  = ekiurl
+        self.getData()
 
 
+    def getData(self):
+        with open(self.url) as f:
+            l = json.load(f)
+            for i in l:
+                addlist = []
+                addlist.append(i.get('stlat')) 
+                addlist.append(i.get('stlong'))
+                addlist.append(i.get('endlat')) 
+                addlist.append(i.get('endlong')) 
+                self.ekiData.append(addlist)
+        
+
+    def ave(self):
+        pass
+
+odakyu = rosen("data/odakyu.json")
+
+print(odakyu.ekiData)

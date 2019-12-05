@@ -1,0 +1,18 @@
+[
+    {"name":"新宿","stlat":35.690718,"stlong":139.699658,"endlat":35.689087,"endlong": 139.699174,"st_id":1},
+    {"name":"代々木上原","stlat":35.669565,"stlong": 139.680623,"endlat":35.668411,"endlong": 139.678830,"st_id":2},
+    {"name":"下北沢","stlat":35.661646,"stlong": 139.667468,"endlat":35.660771,"endlong": 139.666403,"st_id":3},
+    {"name":"経堂","stlat":35.651712, "stlong":139.637679,"endlat":35.650850,"endlong":  139.635617,"st_id":4},
+    {"name":"成城学園前","stlat":35.640505, "stlong": 139.600163,"endlat":35.639837, "endlong":  139.598411,"st_id":5},
+    {"name":"登戸","stlat":35.621833,  "stlong": 139.569820,"endlat":35.620119,"endlong":   139.568852,"st_id":6},
+    {"name":"向ヶ丘遊園","stlat":35.617725, "stlong": 139.565623,"endlat":35.616779,"endlong": 139.563698,"st_id":7},
+    {"name":"新百合ヶ丘","stlat":35.604438, "stlong": 139.508225,"endlat":35.603033,"endlong":  139.506820,"st_id":8},
+    {"name":"町田","stlat":35.544772,"stlong":  139.445569,"endlat":35.543169, "endlong": 139.444529,"st_id":9},
+    {"name":"相模大野","stlat":35.533325,"stlong": 139.438777,"endlat":35.531090,"endlong":  139.437060,"st_id":10},
+    {"name":"中央林間","stlat":35.508624,"stlong": 139.444164,"endlat":35.506814,"endlong": 139.444074,"st_id":11},
+    {"name":"南林間","stlat":35.496477,"stlong": 139.448119,"endlat":35.494667, "endlong": 139.447758,"st_id":12},
+    {"name":"大和","stlat":35.470603,"stlong": 139.461127,"endlat":35.468869, "endlong":  139.461886,"st_id":13},
+    {"name":"長後","stlat":35.412988,"stlong":  139.465523,"endlat":35.411318,"endlong":   139.465269,"st_id":14},
+    {"name":"湘南台","stlat":35.397227,"stlong":  139.466332,"endlat":35.395466,"endlong":   139.466806,"st_id":15},
+    {"name":"藤沢","stlat":35.338654,"stlong":   139.487384,"endlat":35.338502,"endlong":    139.485813,"st_id":16}
+  ]

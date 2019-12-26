@@ -40,10 +40,12 @@ def maha(x):
         invR = np.linalg.inv(R)
         make = 1
 
+
     #MD^2の計算
     for i in range(N):
         d0 = xx[i,:]
         d1 = np.dot(d0,invR)
+        print (d1)
         d2 = np.dot(d1,d0)/divide
         x_return.append(d2)
 

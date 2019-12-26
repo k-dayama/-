@@ -1,0 +1,10 @@
+[
+    {"name":"渋谷","stlat":35.659264,"stlong":139.702515,"endlat":35.658495,"endlong": 139.702940,"st_id":1},
+    {"name":"中目黒","stlat":35.645000,"stlong":139.699775,"endlat":35.643707, "endlong": 139.698398,"st_id":1},
+    {"name":"自由が丘","stlat":35.608237,"stlong":139.669188,"endlat":35.606590,"endlong": 139.668386,"st_id":1},
+    {"name":"武蔵小杉","stlat":35.576730,"stlong":139.660110,"endlat":35.575115,"endlong": 139.659374,"st_id":1},
+    {"name":"日吉","stlat":35.554944,"stlong":139.647278,"endlat":35.552531,"endlong": 139.646659,"st_id":1},
+    {"name":"菊名","stlat":35.511748,"stlong": 139.631169,"endlat":35.509648, "endlong": 139.631432,"st_id":1},
+    {"name":"横浜","stlat":35.467143, "stlong":139.622910,"endlat":35.465316, "endlong": 139.621211,"st_id":1}
+
+]
